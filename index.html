@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>NEOTECH EDULAB · Founder Pitch · MIT Solve × Amazon Sustainability</title>
-<meta name="viewport" content="width=1920, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -85,21 +85,111 @@ html,body{margin:0;padding:0;height:100%;background:#000;font-family:var(--font-
 .caption-text .word{display:inline-block;opacity:0;transform:translateY(6px);animation:wordIn .5s var(--ease-out) forwards}
 @keyframes wordIn{to{opacity:1;transform:none}}
 
-/* Controls */
-.controls{position:absolute;left:80px;right:80px;bottom:40px;height:56px;display:flex;align-items:center;gap:18px;color:var(--ink-300);font-family:var(--font-mono);font-size:13px;z-index:30;transition:opacity .4s var(--ease)}
+/* Controls — fixed outside the scaled 16:9 stage so Play/Restart/TTS are always visible */
+.controls{
+  position:fixed;
+  left:clamp(12px,3vw,80px);
+  right:clamp(12px,3vw,80px);
+  bottom:calc(14px + env(safe-area-inset-bottom));
+  min-height:60px;
+  height:auto;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:10px;
+  color:var(--ink-300);
+  font-family:var(--font-mono);
+  font-size:13px;
+  z-index:9999;
+  background:rgba(3,16,29,.86);
+  border:1px solid rgba(61,190,179,.22);
+  border-radius:18px;
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  box-shadow:0 18px 70px -24px rgba(0,0,0,.85), 0 0 0 1px rgba(255,255,255,.04) inset;
+  transition:opacity .4s var(--ease), transform .25s var(--ease);
+}
 .viewport.is-recording .controls,.viewport.is-recording .top-bar{opacity:0;pointer-events:none}
-.controls button{appearance:none;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--ink-050);height:44px;padding:0 16px;border-radius:10px;font:500 13px/1 var(--font-sans);letter-spacing:.04em;cursor:pointer;display:inline-flex;align-items:center;gap:9px;transition:background .2s, border-color .2s, transform .15s}
-.controls button:hover{background:rgba(61,190,179,.12);border-color:rgba(61,190,179,.5)}
+.controls button{
+  appearance:none;
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.06);
+  color:var(--ink-050);
+  height:44px;
+  padding:0 16px;
+  border-radius:12px;
+  font:600 13px/1 var(--font-sans);
+  letter-spacing:.04em;
+  cursor:pointer;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  white-space:nowrap;
+  transition:background .2s, border-color .2s, transform .15s, filter .2s;
+}
+.controls button:hover{background:rgba(61,190,179,.14);border-color:rgba(61,190,179,.55)}
 .controls button:active{transform:translateY(1px)}
-.controls button.primary{background:linear-gradient(180deg, var(--sea-500), var(--kelp-500));border-color:transparent;color:#04221d;font-weight:600;padding:0 22px;box-shadow:0 8px 24px -8px rgba(26,161,136,.55)}
+.controls button.primary{
+  background:linear-gradient(180deg, var(--sea-500), var(--kelp-500));
+  border-color:transparent;
+  color:#04221d;
+  font-weight:700;
+  padding:0 24px;
+  min-width:96px;
+  box-shadow:0 8px 24px -8px rgba(26,161,136,.55)
+}
 .controls button.primary:hover{filter:brightness(1.08)}
-.controls .icon{width:14px;height:14px;display:inline-block}
-.scrubber{flex:1;height:6px;background:rgba(255,255,255,.08);border-radius:999px;position:relative;cursor:pointer;overflow:hidden}
+.controls button.is-on{
+  background:rgba(61,190,179,.18);
+  border-color:rgba(61,190,179,.75);
+  color:var(--sea-100);
+  box-shadow:0 0 0 1px rgba(61,190,179,.08) inset, 0 0 22px -12px rgba(61,190,179,.95)
+}
+.controls .icon{width:14px;height:14px;display:inline-block;flex:0 0 auto}
+.scrubber{flex:1 1 auto;min-width:220px;height:7px;background:rgba(255,255,255,.1);border-radius:999px;position:relative;cursor:pointer;overflow:hidden}
 .scrubber .progress{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg, var(--sea-500), var(--kelp-500));border-radius:999px;width:0%}
 .scrubber .scene-marks{position:absolute;inset:0;pointer-events:none}
 .scrubber .scene-marks span{position:absolute;top:0;bottom:0;width:1px;background:rgba(255,255,255,.18)}
-.timer{font-family:var(--font-mono);font-size:13px;color:var(--ink-300);letter-spacing:.04em;min-width:96px;text-align:right}
+.timer{font-family:var(--font-mono);font-size:13px;color:var(--ink-300);letter-spacing:.04em;min-width:96px;text-align:right;white-space:nowrap}
 .timer b{color:var(--ink-050);font-weight:500}
+#btnMp3{
+  border-color:rgba(255,255,255,.16)!important;
+  background:rgba(255,255,255,.06)!important;
+  border-radius:12px!important;
+  color:var(--ink-050)!important;
+}
+@media (max-width:900px){
+  html,body{overflow:hidden}
+  .viewport{min-height:100dvh}
+  .controls{
+    left:10px;
+    right:10px;
+    bottom:calc(10px + env(safe-area-inset-bottom));
+    gap:8px;
+    padding:8px;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    border-radius:16px;
+  }
+  .controls button{
+    height:48px;
+    padding:0 14px;
+    font-size:14px;
+    border-radius:12px;
+  }
+  #btnPlay{order:1;flex:1 1 42%;min-width:128px}
+  #btnRestart{order:2;flex:1 1 28%;min-width:112px}
+  #btnTTS{order:3;flex:1 1 28%;min-width:112px}
+  .timer{order:4;flex:0 0 auto;min-width:86px;text-align:left;padding-left:4px}
+  .scrubber{order:5;flex:1 0 100%;min-width:100%;height:9px}
+  #btnMp3,#btnClean{display:none!important}
+  .chapter-label{display:none}
+}
+@media (max-height:760px) and (min-width:901px){
+  .controls{bottom:8px;min-height:54px;padding:8px}
+  .controls button{height:40px}
+}
 
 /* Hide-on-clean toggle for "recording" mode */
 .clean-toggle{position:absolute;top:50px;right:80px;z-index:40;display:none}
@@ -544,24 +634,25 @@ audio{display:none}
     <div class="captions"><p class="caption-text" id="captionText"></p></div>
 
     <!-- CONTROLS -->
-    <div class="controls" id="controls">
-      <button id="btnPlay" class="primary" title="Play / Pause (Space)">
-        <svg class="icon" id="iconPlay" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg>
-        <svg class="icon" id="iconPause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
-        <span id="playLabel">Play</span>
-      </button>
-      <button id="btnRestart" title="Restart (R)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>Restart</button>
-      <div class="scrubber" id="scrubber"><div class="progress" id="progress"></div><div class="scene-marks" id="sceneMarks"></div></div>
-      <div class="timer"><b id="tCur">00:00</b> / <span id="tTot">01:50</span></div>
-      <button id="btnTTS" title="Toggle browser narration"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8a5 5 0 0 1 0 8M19 5a9 9 0 0 1 0 14"/></svg><span id="ttsLabel">TTS Off</span></button>
-      <label for="mp3Input" id="btnMp3" style="appearance:none;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--ink-050);height:44px;padding:0 16px;border-radius:10px;font:500 13px/44px 'Inter Tight',sans-serif;letter-spacing:.04em;cursor:pointer;display:inline-flex;align-items:center;gap:9px"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M8 11l4 4 4-4"/><path d="M5 21h14"/></svg>Load MP3</label>
-      <input type="file" id="mp3Input" accept="audio/*" style="display:none">
-      <button id="btnClean" title="Hide controls for screen recording (C)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="17" cy="9" r="1.2" fill="currentColor"/></svg>Clean</button>
-    </div>
-
-    <audio id="audio" preload="auto"></audio>
-
   </div>
+
+  <div class="controls" id="controls">
+    <button id="btnPlay" class="primary" title="Play / Pause (Space)">
+      <svg class="icon" id="iconPlay" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4l13 8-13 8z"/></svg>
+      <svg class="icon" id="iconPause" viewBox="0 0 24 24" fill="currentColor" style="display:none"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>
+      <span id="playLabel">Play</span>
+    </button>
+    <button id="btnRestart" title="Restart (R)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>Restart</button>
+    <div class="scrubber" id="scrubber"><div class="progress" id="progress"></div><div class="scene-marks" id="sceneMarks"></div></div>
+    <div class="timer"><b id="tCur">00:00</b> / <span id="tTot">01:50</span></div>
+    <button id="btnTTS" class="is-on" title="TTS narration is ON. Click to toggle."><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8a5 5 0 0 1 0 8M19 5a9 9 0 0 1 0 14"/></svg><span id="ttsLabel">TTS On</span></button>
+    <label for="mp3Input" id="btnMp3" style="appearance:none;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:var(--ink-050);height:44px;padding:0 16px;border-radius:10px;font:500 13px/44px 'Inter Tight',sans-serif;letter-spacing:.04em;cursor:pointer;display:inline-flex;align-items:center;gap:9px"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M8 11l4 4 4-4"/><path d="M5 21h14"/></svg>Load MP3</label>
+    <input type="file" id="mp3Input" accept="audio/*" style="display:none">
+    <button id="btnClean" title="Hide controls for screen recording (C)"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="17" cy="9" r="1.2" fill="currentColor"/></svg>Clean</button>
+  </div>
+
+  <audio id="audio" preload="auto"></audio>
+
 </div>
 
 <script>
@@ -628,7 +719,7 @@ let lastTick = 0;
 let lastCaptionIdx = -1;
 let lastSceneIdx = -1;
 let useAudio = false;
-let useTTS = false;
+let useTTS = true;
 let ttsSpoken = new Array(CAPTIONS.length).fill(false);
 const audio = document.getElementById('audio');
 
@@ -715,6 +806,7 @@ function play(){
   document.documentElement.style.setProperty('--anim-play','running');
   document.querySelectorAll('.bg-orb,.photo-img,.photo-streak').forEach(el=>el.style.animationPlayState='running');
   if(useAudio){ audio.play().catch(()=>{}); }
+  if(useTTS && !useAudio && 'speechSynthesis' in window){ try{ speechSynthesis.resume(); }catch(e){} }
 }
 function pause(){
   playing = false;
@@ -755,7 +847,13 @@ scrubber.addEventListener('click', e=>{
 });
 
 /* ---- TTS ---- */
+const btnTTS = document.getElementById('btnTTS');
 const ttsLabel = document.getElementById('ttsLabel');
+function syncTTSButton(){
+  ttsLabel.textContent = useTTS ? 'TTS On' : 'TTS Off';
+  btnTTS.classList.toggle('is-on', useTTS);
+  btnTTS.title = useTTS ? 'TTS narration is ON. Click to toggle.' : 'TTS narration is OFF. Click to toggle.';
+}
 let chosenVoice = null;
 function pickVoice(){
   if(!('speechSynthesis' in window)) return null;
@@ -788,9 +886,13 @@ function speakLine(cap){
   u.lang = chosenVoice ? chosenVoice.lang : 'en-US';
   speechSynthesis.speak(u);
 }
-document.getElementById('btnTTS').addEventListener('click', ()=>{
+syncTTSButton();
+btnTTS.addEventListener('click', ()=>{
   useTTS = !useTTS;
-  ttsLabel.textContent = useTTS ? 'TTS On' : 'TTS Off';
+  syncTTSButton();
+  if(useTTS && 'speechSynthesis' in window){
+    try{ speechSynthesis.resume(); }catch(e){}
+  }
   if(!useTTS && 'speechSynthesis' in window) speechSynthesis.cancel();
 });
 
@@ -801,7 +903,7 @@ document.getElementById('mp3Input').addEventListener('change', e=>{
   audio.src = URL.createObjectURL(f);
   useAudio = true;
   useTTS = false;
-  ttsLabel.textContent = 'TTS Off';
+  syncTTSButton();
   if('speechSynthesis' in window) speechSynthesis.cancel();
   document.getElementById('btnMp3').textContent = 'MP3: '+ f.name.replace(/\.[^.]+$/, '');
   audio.addEventListener('loadedmetadata', ()=>{
