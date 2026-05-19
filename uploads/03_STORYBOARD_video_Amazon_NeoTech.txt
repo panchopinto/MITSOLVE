@@ -1,0 +1,94 @@
+Storyboard for Amazon Sustainability Pilot Program Video
+Solution: NEOTECH EDULAB SpA / PEVE IA / NeoTech Climate Learning Lab
+Target duration: 90 to 120 seconds
+Format: 16:9 horizontal video, 1080p, English subtitles recommended
+
+SCENE 1 - Human introduction, 0-10 seconds
+Visuals:
+- Pancho Pinto speaking directly to camera.
+- Clean background, good lighting, NeoTech logo if available.
+On-screen text:
+- Pancho Pinto
+- Founder, NEOTECH EDULAB SpA
+Narration:
+- Hello, my name is Pancho Pinto, founder of NEOTECH EDULAB SpA, based in Chile.
+Purpose:
+- Establish trust, leadership, and authenticity.
+
+SCENE 2 - The opportunity/problem, 10-25 seconds
+Visuals:
+- Students using computers, tablets, or learning materials.
+- PEVE landing page or platform screenshot.
+- Optional: classroom, family studying, accessibility tools.
+On-screen text:
+- Inclusive climate and sustainability learning
+Narration:
+- Students need accessible, practical, and engaging ways to learn sustainability and climate adaptation.
+Purpose:
+- Connect education, inclusion, and sustainability.
+
+SCENE 3 - The technology, 25-45 seconds
+Visuals:
+- Screenshots of app.peve.cl or PEVE learning pages.
+- AI tutor mockup or learning dashboard.
+- Quizzes, simulations, progress tracking.
+On-screen text:
+- AI + digital learning + accessibility
+Narration:
+- Our solution combines artificial intelligence, digital learning, accessibility tools, immersive resources, and environmental data systems.
+Purpose:
+- Show technology clearly.
+
+SCENE 4 - Sustainability in practice, 45-70 seconds
+Visuals:
+- School greenhouse.
+- Hydroponics, aquaponics, biodigester, sensors, ESP32/ESP8266 prototypes.
+- Students observing environmental data.
+On-screen text:
+- Real-world sustainability projects
+Narration:
+- We do not teach sustainability only as theory. We connect learning with greenhouses, hydroponics, aquaponics, biodigesters, sensors, and IoT monitoring.
+Purpose:
+- Show what differentiates NeoTech from ordinary EdTech platforms.
+
+SCENE 5 - Inclusion and immersive learning, 70-90 seconds
+Visuals:
+- Oculus Quest / VR resources.
+- 3D models, AR, 3D printing, assistive design or inclusive educational materials.
+- Belén's inclusive content or illustrations if available.
+On-screen text:
+- Inclusive, visual, interactive learning
+Narration:
+- Students with different learning needs can access visual, interactive, and guided materials.
+Purpose:
+- Highlight Universal Design for Learning and accessibility.
+
+SCENE 6 - Why Amazon / readiness to scale, 90-110 seconds
+Visuals:
+- NeoTech logo.
+- PEVE / NeoTech websites.
+- Team working, prototypes, student projects.
+On-screen text:
+- Ready to validate, improve, and scale
+Narration:
+- NEOTECH EDULAB is well suited for the program because we already build educational platforms, inclusive materials, immersive tools, IoT prototypes, and school-based innovation projects.
+Purpose:
+- Show credibility and readiness.
+
+SCENE 7 - Closing, 110-120 seconds
+Visuals:
+- Pancho again on camera.
+- Logo and final message.
+On-screen text:
+- Helping students become climate problem-solvers
+Narration:
+- With Amazon's support, we want to scale this model so more students become active problem-solvers for climate and sustainability challenges. Thank you.
+Purpose:
+- Strong final message.
+
+Recommended editing style:
+- Keep cuts simple and professional.
+- Add English subtitles.
+- Avoid too much text on screen.
+- Use real evidence: platform screenshots, students, prototypes, greenhouse, VR, IoT, 3D printing.
+- Keep total duration under 2 minutes.

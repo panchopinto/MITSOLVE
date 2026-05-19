@@ -1,0 +1,64 @@
+NEOTECH EDULAB Evidence and Project Inventory for NotebookLM
+Purpose: Use this file as a source to help NotebookLM generate a credible video script, storyboard, and pitch narrative for MIT Solve / Amazon Sustainability Pilot Program.
+
+1. PEVE IA - AI-powered learning platform
+Description:
+PEVE IA is an educational platform designed to support students preparing for Chilean validation exams. It organizes learning by grade level, subject, and official learning objectives. It includes digital content, quizzes, simulations, downloadable materials, accessibility tools, AI tutoring, and dashboards for students, guardians, and educators.
+Impact relevance:
+- Supports educational continuity.
+- Helps students outside traditional schooling.
+- Provides structured and measurable learning pathways.
+- Includes accessibility and inclusive design.
+
+2. Inclusive content and accessibility
+Description:
+NEOTECH EDULAB develops materials that consider diverse learning needs, including visual structure, accessible navigation, clear language, illustrations, and support for students who require differentiated learning approaches.
+Impact relevance:
+- Supports learners with different needs.
+- Aligns with Universal Design for Learning.
+- Helps families and educators monitor progress.
+
+3. Immersive education: VR, AR, and 3D
+Description:
+The company develops or integrates 3D, augmented reality, and virtual reality resources for educational experiences. These tools help students understand complex concepts through interactive and visual environments.
+Impact relevance:
+- Increases engagement.
+- Supports visual and experiential learning.
+- Can be used in science, sustainability, heritage, and STEM education.
+
+4. IoT and environmental monitoring
+Description:
+NEOTECH EDULAB has experience with sensors, ESP32/ESP8266 boards, data collection, automation, dashboards, and school-based prototypes. These systems can measure environmental variables such as temperature, humidity, water temperature, pressure, pH, and other indicators depending on the project.
+Impact relevance:
+- Connects learning with real environmental data.
+- Supports climate and sustainability education.
+- Allows students to analyze data from their own school environment.
+
+5. Greenhouse and sustainability projects
+Description:
+NeoTech's educational ecosystem includes applied sustainability learning connected to school greenhouses, hydroponics, aquaponics, biodigesters, composting, and environmental systems.
+Impact relevance:
+- Students learn sustainability by doing.
+- Supports climate adaptation education.
+- Connects STEM learning with food, water, energy, and environmental systems.
+
+6. 3D printing and assistive design
+Description:
+The company has worked with educational 3D printing, inclusive design, tactile resources, assistive objects, and student-centered prototyping.
+Impact relevance:
+- Connects technology with inclusion.
+- Allows students to design practical solutions.
+- Supports accessibility and social impact.
+
+7. Team capacity
+Description:
+- Pancho Pinto: founder, informatics engineer, educator, software developer, platform architect, AI/IoT/VR/automation integration.
+- Belén Acuña: inclusive content development, educational support, accessibility-oriented materials, illustrations.
+- Cristian Pinto: informatics student, platform content review, quality checks, technical support.
+Impact relevance:
+- Small but multidisciplinary team.
+- Combines software, pedagogy, inclusion, and applied technology.
+- Close to real educational communities.
+
+8. MIT Solve / Amazon alignment
+The solution is aligned with the Amazon Sustainability Pilot Program because it connects sustainability education with practical technology. It can support students in learning about climate adaptation, environmental monitoring, food systems, water systems, and data-informed decision-making. It is also aligned with MIT Solve's interest in scalable social impact innovations because it uses a digital platform that can expand across schools and communities.

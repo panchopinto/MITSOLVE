@@ -1,0 +1,28 @@
+NEOTECH EDULAB SpA - Institutional Description for MIT Solve / Amazon Sustainability Pilot Program
+
+NEOTECH EDULAB SpA is a Chilean educational technology company based in Chillan, Nuble Region. The organization designs and develops inclusive digital learning solutions that integrate artificial intelligence, accessibility, immersive technologies, environmental education, software platforms, IoT prototypes, and applied STEM learning experiences.
+
+The company's mission is to expand access to high-quality, inclusive, and practical education by connecting technology with real learning needs. NEOTECH EDULAB works at the intersection of EdTech, accessibility, sustainability, data-informed learning, and immersive education. Its work is especially oriented toward students, families, teachers, and educational communities that require flexible, engaging, and measurable learning pathways.
+
+NEOTECH EDULAB develops web platforms, learning dashboards, AI-supported tutoring experiences, 3D/AR/VR resources, inclusive educational materials, and school-based technology projects. The company also designs prototypes using IoT, sensors, automation, 3D printing, and digital fabrication to connect classroom learning with real-world challenges.
+
+A central solution developed by the company is PEVE IA, an AI-powered learning platform that supports students preparing for Chilean validation exams. PEVE IA organizes content by grade level, subject, and learning objective; provides quizzes, simulations, downloadable materials, accessibility tools, and progress dashboards; and is designed to support students, guardians, and educators.
+
+For the Amazon Sustainability Pilot Program, NEOTECH EDULAB proposes a model that connects digital learning with environmental education and practical sustainability projects. The model can integrate AI tutoring, curriculum-aligned content, immersive learning, and real data from school-based systems such as greenhouses, hydroponics, aquaponics, biodigesters, environmental sensors, and IoT monitoring.
+
+What makes NEOTECH EDULAB relevant for MIT Solve is its combination of technology, social impact, education, inclusion, and practical implementation. The company is not only creating digital content; it is building an ecosystem where students can learn through evidence, experimentation, accessibility, and real-world problem solving.
+
+Key areas of work:
+- Inclusive educational technology.
+- AI-supported learning platforms.
+- Curriculum-aligned digital content.
+- Accessibility and Universal Design for Learning.
+- Learning analytics and progress dashboards.
+- Virtual reality, augmented reality, and 3D educational resources.
+- IoT, sensors, automation, and environmental monitoring.
+- School-based sustainability projects.
+- 3D printing and assistive design.
+- STEM education and applied learning.
+
+Positioning statement:
+NEOTECH EDULAB SpA builds inclusive, AI-powered, and sustainability-oriented learning technologies that help students learn through accessible digital pathways, immersive experiences, and real-world environmental data.

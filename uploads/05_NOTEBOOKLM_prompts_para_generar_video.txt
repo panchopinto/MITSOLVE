@@ -1,0 +1,23 @@
+NotebookLM Prompts for Creating the Amazon Sustainability Video
+Use these prompts after uploading the source files about NEOTECH EDULAB, PEVE IA, the video script, storyboard, and evidence inventory.
+
+PROMPT 1 - Generate final video script
+Create a 90 to 120 second English elevator pitch video script for NEOTECH EDULAB SpA applying to the Amazon Sustainability Pilot Program. The script must explain the technology, what differentiates it, why it is innovative, and why NEOTECH EDULAB is well suited for the program. Use a professional but human tone. Mention AI, digital learning, accessibility, VR/AR/3D, IoT environmental monitoring, school greenhouses, hydroponics, aquaponics, biodigesters, and climate/sustainability education.
+
+PROMPT 2 - Generate storyboard
+Create a scene-by-scene storyboard for a 2-minute video. Include time range, visuals, narration, on-screen text, and purpose for each scene. Use real evidence from NEOTECH EDULAB: PEVE IA, inclusive content, immersive learning, IoT, environmental monitoring, sustainability projects, and school-based innovation.
+
+PROMPT 3 - Generate shot list
+Create a shot list for a video editor. Divide the list into: A-roll footage of Pancho speaking, B-roll screenshots of PEVE and NeoTech websites, B-roll of VR/AR/3D, B-roll of school greenhouse/hydroponics/aquaponics/biodigester, B-roll of IoT sensors and dashboards, and final logo/closing screen.
+
+PROMPT 4 - Generate on-screen text
+Create short on-screen text captions for each scene of the video. Each caption must be fewer than 8 words and should sound professional for MIT Solve and Amazon.
+
+PROMPT 5 - Generate YouTube description
+Create a short YouTube description for an unlisted video pitch submitted to MIT Solve for the Amazon Sustainability Pilot Program. Include NEOTECH EDULAB SpA, Chile, AI, inclusive learning, sustainability education, and environmental data systems.
+
+PROMPT 6 - Improve clarity
+Review the script and reduce it to under 250 words while keeping the core message: technology, innovation, differentiation, readiness, and impact.
+
+PROMPT 7 - Spanish preparation version
+Translate the final English script into Spanish so the speaker can understand the meaning before recording the English version. Keep it natural, not literal.
